@@ -6,6 +6,11 @@
 }
 .navigation{
     display: flex;  
+    position: sticky;
+    top: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
 }
 .options{
    
@@ -116,7 +121,7 @@
     font-size: 20px;
     font-weight: 400;
 } 
-.button{
+.button1{
     padding: 20px 40px;
     font-weight: 700;
     border: none;
@@ -138,29 +143,43 @@
 /*section-2*/
 
 .section-2{
-    background-color:lightgrey;
-    padding-bottom: 25px;
+    margin-top: 180px;
+    background-color: #f5f4f5!important;
+    padding-bottom: 120px;
 }
 .heading{
     font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
-    font-size:50px;
+    font-size:32px;
+    font-weight:700;
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    margin-left: 200px;
-    margin-top: 100px;
+    margin-left: 320px;
+    padding-top: 80px;
+    
 }
 .sub-heading{
     font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
-    font-size: 20px;
-    margin-left: 160px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 200px;
     max-width: 100%;  
+    padding-top: 15px;
+    line-height: 30px;
 }
 .image{
-    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 45px;
 }
-.image .text{
-    margin-top:5px;
+.image-text{
+    font-weight: 650;
+    padding-top: 15px;
+    padding-left: 35px;
+    width: 390px;
+}
+.image-text2{
+    padding-top: 15px;
+    padding-left: 35px;
 }
 
 
@@ -168,9 +187,7 @@
 /*section-3*/
 
 .section-3{
-    border-bottom: 1px solid black;
-    background-color: white;
-   
+    background-color: white;   
 }
 .vd1{
     width: 600px;
@@ -220,10 +237,10 @@
 }
 
 /*section-4*/
-.section-4{
+/* .section-4{
     border-bottom: 1px solid lightgray;
     border-bottom-color: rgb(0, 0, 0);
-}
+} */
 .des3{
     font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
     font-size: 32px;
@@ -238,13 +255,17 @@
     padding-left: 30px;
     width: 495px;
 }
+.box-links{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
 .box-link1{
+    display: inline-flex;
     width: 300px;
     background-color: #fff;
     border: none;
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
     color: #1d1c1d;
-    display: flex;
     flex-direction: column;
     font-size: 1.125rem;
     height: 117px;
@@ -252,20 +273,22 @@
     padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition: transform 420ms cubic-bezier(.165,.84,.44,1);
     width: 300px;
+    transition: width 2s;
     font-size: 18px;
     height: 250px;
-    line-height: 26px;
-    
+    line-height: 26px;    
 }
+/* .box-link:hover{
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+    width: 310px;
+} */
 .box-link2{
     width: 300px;
     background-color: #fff;
     border: none;
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
     color: #1d1c1d;
-    display: flex;
     flex-direction: column;
     font-size: 1.125rem;
     height: 117px;
@@ -277,4 +300,184 @@
     font-size: 18px;
     height: 250px;
     line-height: 26px;
+}
+
+/*section-5*/
+.link3{
+    padding-top: 35px;
+    padding-left: 500px;
+    font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+.icon{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 40px;
+}
+/*section-6*/
+.heading-3{
+    font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-size:32px;
+    font-weight:700;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 380px;
+    margin-top: 200px;
+}
+
+.sub-heading-3{
+    font-family:  Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-size: 18px;
+    margin-left: 300px;
+    max-width: 100%;  
+    margin-top: 20px;
+    line-height: 26px
+}
+
+#caraouselExample{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+}
+
+
+
+/*section-7*/
+#accordion{
+    border: none !important;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#collapseone{
+    margin-left: 20px;
+}
+
+.question-header{   
+    color: rgb(0, 0, 0);
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 38px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    text-align: center
+}
+#headingOne{
+    border: none !important;
+}
+#headingTwo{
+    border: none !important;
+}#headingThree{
+    border: none !important;
+}#headingFour{
+    border: none !important;
+}
+.card{
+    border: none !important;
+    border-right: transparent;
+}
+.card-body{
+    padding-left: 20px;
+
+}
+
+
+/*section-8*/
+
+.section-8{
+    margin-top: 70px;
+    padding-bottom:100px;
+    background-color: #541554;
+    clip-path: ellipse(75% 100% at center top);
+    height: auto;
+    min-height: 370px;
+}
+
+
+.header{
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 57px;
+    padding-top: 62px;    
+}
+.button-element{
+    padding-top: 32px;
+    font-family: inherit;
+    margin-left: 420px;              
+}
+.slack-button{
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-family: inherit;
+    background-color: white; 
+    color:  #541554;  
+    padding: 20px 40px;          
+}
+.contact-button{
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-family: inherit;
+    background-color: white; 
+    color:  #541554;  
+    padding: 20px 30px;      
+}
+
+/*section-9*/
+.section-9{
+    display: inline-flex;
+    margin-left: 60px;
+}
+.options-components{
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: .875rem;
+    height: 40px;   
+} 
+.WHY-SLACK{
+    display: inline-flex;
+}
+.PRODUCT{
+    display: inline-flex;
+}
+.PRICING{
+    display: inline-flex;
+}
+.UI-components{
+    cursor: pointer;
+    color:black;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: .875rem;
+    height: 40px;  
+}
+.UI-components:hover {
+    color: #1264a3;
+}
+
+/*section-10*/
+.section-10{
+    display: flex;
+    margin-top: 470px;
+    margin-left: 20px;
+}
+
+.footer-icons{
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+   
 }
